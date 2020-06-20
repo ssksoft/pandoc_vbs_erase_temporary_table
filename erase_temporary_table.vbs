@@ -34,3 +34,4 @@ Sub erase_temporary_table(word_obj,doc_obj, keyword)
     Next
 End Sub
 
+
