@@ -30,7 +30,18 @@ End Sub
 
 Sub erase_temporary_table(word_obj,doc_obj, keyword)
     For Each table in doc_obj.Tables
-        table.Delete
+        table.Cell(1, 1).Select
+        str = word_obj.Selection.Text 
+        str = Left(str, Len(str) - 2) 
+        If str="[erase]" Then
+            MsgBox("tenp")
+            MsgBox(str)
+            table.Delete
+        Else
+            MsgBox("Not temp")
+            MsgBox(str)
+
+        End If
     Next
 End Sub
 

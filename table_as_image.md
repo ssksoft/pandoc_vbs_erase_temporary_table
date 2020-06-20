@@ -1,8 +1,8 @@
 
 
-| 1       | 2   |
+| [erase] | 2   |
 | ------- | --- |
-| [erase] | a   |
+| a       | a   |
 
 :table {#tbl:test}
 
